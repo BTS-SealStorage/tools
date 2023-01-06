@@ -1,0 +1,1 @@
+/usr/bin/google-chrome-stable --user-data-dir=$HOME/.chrome_proxy --proxy-server="socks://10.0.0.110:8088"

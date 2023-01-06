@@ -1,0 +1,4 @@
+#ssh -f -N -L 5000:localhost:5000 -l my_username registry.mydomain.com
+ssh -N -L 5000:localhost:5000 -i ~/.ssh/id_ed25519 -l btsomogyi -N btsomogyi@lv-jump harbor.sealstorage.tech
+
+# ssh -i ~/.ssh/id_ed25519 -D 8088 -C -q -N btsomogyi@lv-jump

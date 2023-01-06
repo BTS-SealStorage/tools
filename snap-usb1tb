@@ -1,0 +1,3 @@
+DATESTAMP=$(date "+%Y%m%d%H%M%S")
+
+sudo zfs snapshot usb1tb@$DATESTAMP

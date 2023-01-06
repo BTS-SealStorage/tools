@@ -1,0 +1,1 @@
+ssh -i ~/.ssh/id_ed25519 -D 0.0.0.0:8088 -C -q -N btsomogyi@lv-jump

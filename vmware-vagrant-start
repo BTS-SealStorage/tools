@@ -1,0 +1,1 @@
+nohup sudo $HOME/code/github/vagrant-vmware-desktop/go_src/vagrant-vmware-utility/vagrant-vmware-utility api | sudo tee /var/log/vagrant-vmware-utility.log &
