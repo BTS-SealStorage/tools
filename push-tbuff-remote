@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ -z $1 ]]; then
+  echo "requires remote hosts as only arguement"
+  exit 1
+fi
+
+LOCAL=$(hostname | sed 's/\([[:alpha:]]*\).*/\1/')
+
+tmux save-buffer - | ssh ${USER}@$1 "cat > /tmp/tmux-${LOCAL}-buffer" 
