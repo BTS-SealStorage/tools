@@ -1,0 +1,7 @@
+if [[ -n $1 ]]; then
+  BUFFILE=/tmp/tmux-$1-buffer
+else
+  BUFFILE=/tmp/tmux-buffer
+fi
+
+xclip -selection c < $BUFFILE
