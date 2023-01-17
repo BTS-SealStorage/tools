@@ -1,0 +1,14 @@
+if [[ $# -lt 2 ]]; then
+  echo "usage: $0 <stash #> <list of files>..."
+  exit 1
+fi
+
+if [[ $(git stash list | wc -) -lt $1 ]]; then
+  echo "invalid stash index: $1"
+  exit 1
+else 
+  STASH=$1
+  shift
+fi
+
+git checkout stash@{$1} -- $@
