@@ -1,0 +1,6 @@
+if [[ $? -lt 2 ]]; then
+  echo "usage: $0 <host>:<path_to_file> <localpath>"
+  exit 1
+fi
+ASUSER=${USER:-'btsomogyi'}
+scp -A -J $ASUSER@lv-jump $ASUSER@$1 $2

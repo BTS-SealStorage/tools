@@ -1,1 +1,2 @@
-ssh -A -J btsomogyi@lv-jump btsomogyi@$1
+ASUSER=${USER:-'btsomogyi'}
+ssh -A -J $ASUSER@lv-jump $ASUSER@$1
