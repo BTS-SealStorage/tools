@@ -1,4 +1,4 @@
-if [[ $? -lt 2 ]]; then
+if [[ $# -lt 2 ]]; then
   echo "usage: $0 <localpath> <host>:<path_to_file>"
   exit 1
 fi
